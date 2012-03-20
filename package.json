@@ -1,0 +1,23 @@
+{ "name" : "deltaql"
+, "description" : "A NodeJS-based event propagation query language."
+, "version" : "0.0.1"
+, "maintainers" :
+  [ { "name": "Chris Dew"
+    , "email": "cmsdew@gmail.com"
+    }
+  ]
+, "bugs" : { "web" : "http://github.com/chrisdew/deltaql/issues" }
+, "licenses" : [ { "type" : "MIT" } ]
+, "repositories" :
+  [ { "type" : "git"
+    , "url" : "http://github.com/chrisdew/deltaql"
+    }
+  ]
+, "main" : "./lib/deltaql"
+, "engines" : { "node" : ">=0.4.0" }
+, "dependencies" : { "vows" : ">=0.5.2"
+                   , "docco" : ">=0.3.0"
+                   , "node-uuid" : ">=1.1.0"
+                   , "datejs" : ">=0.0.1"
+                   }
+}
