@@ -17,11 +17,9 @@ DeltaQL has five deliverables:
 
 3. The Browser Library.  This runs on the browser and builds on top of KnockoutJS.
 
-4. The eBook.  Income from this $9 ebook will support the development of DeltaQL.
+4. The Blog App.  A working example of a web app built with DeltaQL, possibly demonstrating best practises.
 
-5. The Blog App.  A working example of a web app built with DeltaQL, possibly demonstrating best practises.
-
-All except the eBook will be available on GitHub under the MIT license.
+All will be available on GitHub under the MIT license.
 
 
 Persistance
