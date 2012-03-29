@@ -33,7 +33,7 @@ describe('RSet', function() {
   
   before(function(){
     r = new rs.RSet();
-    r.processSop({sop:'state', rows:{'0':{id:'0',foo:12,bar:13},'1':{id:'1',foo:10,bar:14}}});
+    r.init([{id:'0',foo:12,bar:13},{id:'1',foo:10,bar:14}]);
   });
   
   describe('delete row', function() {

@@ -9,7 +9,7 @@ DeltaQL
 
 Imagine a database (like MySQL or SQLServer) whose 'result sets' automatically update as the underlying data changes.  Add to this a facility to extend these 'deltas' all the way to the browser.
 
-That's right, the results of query, displayed in a web page which changes when (and only when) a change the underlying data alters the result of a particular query.
+The results of query, displayed in a web page.  They change when (and only when) a change the underlying data alters the result of a particular query.  All done *without* 're-executing' the query.
 
 Welcome to DeltaQL - no more F5, no more polling the DB.
 
