@@ -67,7 +67,23 @@ This may be useful if you start diving into the code.
 * Filter - a transform from a ResultSet to a possibly smaller ResultSet
 * Sort - a transform from a ResultSet to a ResultList
 * Head - a transform from a ResultList to a possibly smaller ResiltList
-* Tail - a transfrom from a ResultList to a possibly smaller ResultList
+* Tail - a transform from a ResultList to a possibly smaller ResultList
+
+
+Shortcommings
+-------------
+
+This project is about getting something for people to play with and critique in a few tens of hours.
+
+Some of the aspects of the project which could do with major improvement include:
+* Testing - there is a test suite, but coverage is very far from 100%
+* Examples - is would be good to have a whole directory of exmaples, rather than just a couple of example projects.
+* API documents - that would be nice
+* Safety - at the moment most updates are done through simple event emitters.  These provide no feedback on (for example) failure to write to disk.
+* Efficiency - E.g.
+  * Pushing Filters Upstream - if a filter function captures no variables, and it has a remote parent, then it can be pushed across a network connection to reduce the number of number of ops sent over the wire.
+
+These issues are all fixable, given a few weeks of work.  I'm not even going to think about that until I know that I'm solving a problem that exists for more than just me.
 
 
 Licence
