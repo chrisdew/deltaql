@@ -76,6 +76,7 @@ Shortcommings
 This project is about building something for people to play with and critique in a few tens of hours.
 
 Some of the aspects of the project which could do with major improvement include:
+
 * Testing - there is a test suite, but coverage is very far from 100%
 * Examples - is would be good to have a whole directory of exmaples, rather than just a couple of example projects.
 * API documents - that would be nice
