@@ -40,7 +40,7 @@ to send it to a browser, along with all later changes, it's as simple as:
                             } );
     });
 
-There components can be joined either in-process or via TCP connections.  As soon as an application is suspected of getting too busy for one NodeJS process, the Silo(s) can be moved out to their own process(es).
+These components can be joined either in-process or via TCP connections.  As soon as an application is suspected of getting too busy for one NodeJS process, the Silo(s) can be moved out to their own process(es).
 
 A TCP link is a simple as:
 
