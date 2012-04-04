@@ -14,6 +14,48 @@ The results of query, displayed in a web page.  They change when (and only when)
 Welcome to DeltaQL - no more F5, no more polling the DB.
 
 
+Operations
+----------
+
+DeltaQL systems begin with Silos.  These are simply unorders sets of rows, similar to a database.
+
+Components, such as Filter, Join, Sort, Union and Head are used to build a query whose results can be displayed in a browser.
+
+For example:
+
+    var silo = new Silo();
+    var users = silo.filter(function(row) { return row.table === 'users'; });
+    var loggedIn = user.filter(function(row) { return row.loggedIn; });
+    var numLoggedIn = loggedIn.count();
+
+to send it to a browser, it's as simple as:
+
+    // render the page
+    app.get('/', function(req, res) {
+      var dqlSess = dql.register(req);
+      dqlSess.add('users', users);
+      dqlSess.add('numLoggedIn', numLoggedIn);
+      res.render('index', { layout: 'layouts/base',
+                            title: 'a DeltaQL page'
+                            } );
+    });
+
+There components can be joined either in-process or via TCP connections.  As soon as an application is suspected of getting too busy for one NodeJS process, the Silo(s) can be moved out to their own process(es).
+
+A TCP link is a simple as:
+
+    // silo process
+    var silo = new Silo();
+    var users = silo.filter(function(row) { return row.table === 'users'; });
+    silo.listen(1234, '0.0.0.0');
+    users.listen(1235, '0.0.0.0');
+
+    // web server process
+    var loggedIn = remoteRSet(1235, '127.0.0.1').filter(function(row) { return row.loggedIn; });
+    var numLoggedIn = loggedIn.count();
+
+All updates are done to Silos, never to intermediate results, otherwise observering components further 'up' the tree (more accurately a DAG) would not see the change. 
+
 
 Deliverables
 ------------
@@ -26,7 +68,7 @@ DeltaQL has five deliverables:
 
 3. The Browser Library.  This runs on the browser and builds on top of KnockoutJS.
 
-4. The Blog App.  A working example of a web app built with DeltaQL, possibly demonstrating best practises.
+4. The Site App.  A working example of a web app built with DeltaQL, possibly demonstrating best practises.
 
 All will be available on GitHub under the MIT license.
 
