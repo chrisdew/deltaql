@@ -17,7 +17,7 @@ Welcome to DeltaQL - no more F5, no more polling the DB.
 Using Delta QL
 --------------
 
-DeltaQL systems begin with Silos.  These are simply unorders sets of rows, similar to a database.
+DeltaQL systems begin with Silos.  These are simply unordered sets of rows, similar to a database.
 
 Components, such as Filter, Join, Sort, Union and Head are used to build a query whose results can be displayed in a browser.
 
