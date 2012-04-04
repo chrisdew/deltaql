@@ -1,7 +1,7 @@
 Notice
 ------
 
-This project is under heavy development and does not yet do anything other than pass some tests.
+This project is under heavy development and does not yet do anything other than pass some tests, and make the DeltaQL Bootstrap project work.
 
 
 DeltaQL
@@ -121,6 +121,7 @@ Some of the aspects of the project which could do with major improvement include
 
 * Testing - there is a test suite, but coverage is very far from 100%
 * Examples - is would be good to have a whole directory of exmaples, rather than just a couple of example projects.
+* IE - I'm not putting any effort into making anything work on IE, yet.  I expect to support IE8+ later.
 * API documents - that would be nice
 * Safety - at the moment most updates are done through simple event emitters.  These provide no feedback on (for example) failure to write to disk.
 * Efficiency - E.g.
