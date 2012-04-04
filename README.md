@@ -14,8 +14,8 @@ The results of query, displayed in a web page.  They change when (and only when)
 Welcome to DeltaQL - no more F5, no more polling the DB.
 
 
-Operations
-----------
+Using Delta QL
+--------------
 
 DeltaQL systems begin with Silos.  These are simply unorders sets of rows, similar to a database.
 
