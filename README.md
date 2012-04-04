@@ -73,7 +73,7 @@ This may be useful if you start diving into the code.
 Shortcommings
 -------------
 
-This project is about getting something for people to play with and critique in a few tens of hours.
+This project is about building something for people to play with and critique in a few tens of hours.
 
 Some of the aspects of the project which could do with major improvement include:
 * Testing - there is a test suite, but coverage is very far from 100%
