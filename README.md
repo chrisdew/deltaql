@@ -28,7 +28,7 @@ For example:
     var loggedIn = user.filter(function(row) { return row.loggedIn; });
     var numLoggedIn = loggedIn.count();
 
-to send it to a browser, it's as simple as:
+to send it to a browser, along with all later changes, it's as simple as:
 
     // render the page
     app.get('/', function(req, res) {
