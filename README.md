@@ -27,7 +27,7 @@ For example:
 
     var silo = new Silo();
     var users = silo.filter(function(row) { return row.table === 'users'; });
-    var loggedIn = user.filter(function(row) { return row.loggedIn; });
+    var loggedIn = users.filter(function(row) { return row.loggedIn; });
     var numLoggedIn = loggedIn.count();
 
 to send it to a browser, along with all later changes, it's as simple as:
