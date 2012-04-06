@@ -116,7 +116,7 @@ This may be useful if you start diving into the code.
 * Tail - a transform from a ResultList to a possibly smaller ResultList
 
 
-Shortcommings
+Shortcomings
 -------------
 
 This project is about building something for people to play with and critique in a few tens of hours.
